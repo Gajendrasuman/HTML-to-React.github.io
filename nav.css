@@ -1,0 +1,116 @@
+nav{
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+
+nav .title{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+nav .title .logo{
+    height: 60%;
+    width: 25%;
+}
+
+nav .title h1{
+    position: relative;
+    top: -0.5rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin: 0.5rem ;
+    width: max-content;
+}
+
+nav ul{
+    width: fit-content;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+}
+
+nav ul li{
+    text-align: center;
+    width: calc(100% / 8%);
+    max-width: 8rem;
+    padding: 0.8rem 0.5rem;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul li a{
+    color: var(--primary);
+    font-size: 0.8rem;
+    transition: color 0.25s ease-out;
+}
+
+nav ul li a:hover{
+    color: var(--secondary);
+}
+
+.current{
+    color: var(--secondary);
+}
+
+nav .nav-icon{
+    height: 2.5rem;
+    width: 3rem;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav-icon span{
+    height: 0.25rem;
+    width: 1.7rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    background: var(--primary);
+    display: block;
+    transition: all 0.25s ease-in-out;
+
+}
+
+nav .nav-icon span:first-child{
+    margin-top: 0.5rem;
+}
+
+nav .checked span:nth-child(2){
+    display: none;
+}
+
+nav .checked span:first-child{
+    transform: rotateZ(45deg);
+}
+
+nav .checked span:last-child{
+    transform: rotateZ(-45deg);
+    margin-top: -0.25rem;
+}
+@media screen and (max-width: 900px){
+    nav ul{
+        position: absolute;
+        display: block;   
+        right: 5%;     
+        top: 3rem;
+        background: #45ad61;
+        width: 80%;
+    }
+
+    nav ul li{
+        text-align: left;
+    }
+
+    nav .nav-icon{
+        display: block;
+    }
+    
+}

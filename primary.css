@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'themify';
+    src: url(https://preview.colorlib.com/theme/breed2/fonts/themify.woff?-fvbane);
+}
+
+:root{
+    --primary:#05364d;
+    --secondary:#efb6df;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    offset: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
