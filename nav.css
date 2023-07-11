@@ -31,6 +31,8 @@ nav ul{
     display: flex;
     margin-top: 2.5rem;
     margin-left: 5rem;
+    background: #fff;
+    z-index: 999;
 }
 
 nav ul li{
