@@ -101,12 +101,18 @@ nav .checked span:last-child{
         display: block;   
         right: 5%;     
         top: 3rem;
-        background: #45ad61;
+        background: transparent;
+        box-shadow: inset 2px -2px 2px var(--primary),
+           2px -2px 2px var(--primary) ;
+        border: none;
+        border-radius: 1rem 0;
+        top: 4rem;
         width: 80%;
     }
 
     nav ul li{
         text-align: left;
+        width: 100%;
     }
 
     nav .nav-icon{
