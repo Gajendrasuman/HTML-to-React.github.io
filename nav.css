@@ -1,5 +1,4 @@
 nav{
-    background: #fff;
     width: 100%;
     display: flex;
 }
@@ -31,7 +30,6 @@ nav ul{
     display: flex;
     margin-top: 2.5rem;
     margin-left: 5rem;
-    background: #fff;
     z-index: 999;
 }
 
@@ -110,6 +108,7 @@ nav .checked span:last-child{
         border-radius: 1rem 0;
         top: 4rem;
         width: 80%;
+        background: #fff;
     }
 
     nav ul li{

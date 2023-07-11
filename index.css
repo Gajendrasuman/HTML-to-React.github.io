@@ -1,7 +1,18 @@
 main{
     height: max-content;
     width: calc(100% - 10rem);
-    margin: 5rem 0;
-    border: solid;
-    
+    margin: 2rem 5rem;
+}
+
+header{
+    height: max-content;
+    width: 100%;
+}
+
+header img{
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    height: 130%;
+    width: 100%;
 }
