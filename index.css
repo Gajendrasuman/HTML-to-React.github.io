@@ -1,7 +1,11 @@
+body{
+    overflow-x: hidden;
+}
 main{
     height: max-content;
-    width: calc(100% - 10rem);
+    width: calc(100% - 18rem);
     margin: 2rem 5rem;
+    margin-left: 8rem;
 }
 
 header{
@@ -9,10 +13,54 @@ header{
     width: 100%;
 }
 
-header img{
+header .header-background,
+header .header-face{
+    height: 890px;
+    width: 105.7rem;
     position: absolute;
-    right: -5rem;
+    right: -11.5rem;
     top: 0;
-    height: 130%;
-    width: 100%;
+    z-index: -1;
+}
+
+header .header-face{
+    height: 600px;
+    width: 22rem;
+    top: 11.93rem;
+    right: 9.9rem;
+    transform: rotateZ(0.5deg);
+}
+
+header h3{
+    font-size: 1rem;
+    color: #797979;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10rem;
+}
+
+header h1{
+    font-size: 3.75rem;
+    color: var(--primary);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+header h5{
+    font-size: 1.35rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+header .social{
+    height: fit-content;
+    width: fit-content;
+    margin: 3rem 0;
+}
+
+header .social i{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #797979;
 }

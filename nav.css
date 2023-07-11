@@ -12,8 +12,10 @@ nav .title{
 }
 
 nav .title .logo{
-    height: 60%;
-    width: 25%;
+    height: 2rem;
+    width: 3rem;
+    position: relative;
+    top: -0.4rem;
 }
 
 nav .title h1{
