@@ -42,7 +42,7 @@ header h3{
 header h1{
     font-size: 3.75rem;
     color: var(--primary);
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -62,5 +62,32 @@ header .social{
 header .social i{
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    color: #797979;
+    color: var(--primary);
+    height: 2rem;
+    width: 2rem;
+}
+
+header .social i:hover{
+    background: var(--gradient-top-right);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+header button{
+    padding: 0.9rem 2.1rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border: none;
+    background: var(--gradient-right);
+    border-radius: 0.3rem;
+    background-size: 200% auto;
+    color: #fff;
+    cursor: pointer;
+    transition: background-position 0.25s ease-in;
+}
+
+header button:hover{
+    background-position: 100%;
 }

@@ -1,6 +1,7 @@
 nav{
     width: 100%;
     display: flex;
+    transition: position, background, top, border, box-shadow 0.25s, 0.25s, 0.25s, 0.25s, 0.25s ease-in;
 }
 
 nav .title{
