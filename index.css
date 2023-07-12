@@ -68,7 +68,8 @@ header .social i{
 }
 
 header .social i:hover{
-    background: var(--gradient-top-right);
+    background: var(--gradient-right);
+    background-size: 200%;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -78,7 +79,7 @@ header .social i:hover{
 header button{
     padding: 0.9rem 2.1rem;
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: 500;
     border: none;
     background: var(--gradient-right);
     border-radius: 0.3rem;
@@ -90,4 +91,34 @@ header button{
 
 header button:hover{
     background-position: 100%;
+}
+
+header .ratings{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 37rem;
+    margin-top: 15rem;
+}
+
+header .ratings div{
+    height: 5rem;
+    width: fit-content;
+    display: block;
+}
+
+header .ratings div h2,
+header .ratings div h3{
+    height: fit-content;
+    width: fit-content;
+    margin: 0.5rem auto;
+    letter-spacing: 0;
+}
+
+header .ratings div h2{
+    font-size: 1.6rem;
+    background: var(--gradient-right);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
