@@ -9,6 +9,7 @@
     --secondary:#efb6df;
     --gradient-right: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     --gradient-top-right: linear-gradient(to top right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    --tertury:#5f30ff;
 }
 
 *{

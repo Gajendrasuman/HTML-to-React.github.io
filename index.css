@@ -24,15 +24,15 @@ header .header-face{
 }
 
 header .header-face{
-    height: 600px;
-    width: 22rem;
-    top: 11.93rem;
-    right: 9.9rem;
+    height: 600px !important;
+    width: 22rem !important;
+    top: 11.93rem !important;
+    right: 9.9rem !important;
     transform: rotateZ(0.5deg);
 }
 
 header h3{
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: #797979;
     font-weight: 400;
     letter-spacing: 2px;
@@ -40,14 +40,14 @@ header h3{
 }
 
 header h1{
-    font-size: 3.75rem;
+    font-size: 3.75rem !important;
     color: var(--primary);
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
 header h5{
-    font-size: 1.35rem;
+    font-size: 1.35rem !important;
     font-weight: normal;
     letter-spacing: 2px;
     color: var(--primary);
@@ -63,8 +63,8 @@ header .social i{
     margin: 0 0.5rem;
     font-size: 1.5rem;
     color: var(--primary);
-    height: 2rem;
-    width: 2rem;
+    height: 2rem !important;
+    width: 2rem !important;
 }
 
 header .social i:hover{
@@ -96,12 +96,12 @@ header button:hover{
 header .ratings{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 37rem;
-    margin-top: 15rem;
+    width: 37rem !important;
+    margin-top: 15rem !important;
 }
 
 header .ratings div{
-    height: 5rem;
+    height: 5rem !important;
     width: fit-content;
     display: block;
 }
@@ -115,10 +115,134 @@ header .ratings div h3{
 }
 
 header .ratings div h2{
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     background: var(--gradient-right);
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+#about,
+#services{
+    height: fit-content;
+    width: fit-content;
+    margin: 10rem 0;
+    display: flex;
+}
+
+#about img{
+    height: 23rem !important;
+    width: 28rem !important;
+    position: relative;
+    top: 2.5rem;
+    margin-right: 7.5rem;
+    z-index: -1;
+}
+
+#about div{
+    height: fit-content;
+    width: 35rem !important;
+    position: relative;
+    top: 3rem;
+    z-index: -1;
+}
+
+#about div h3,
+#services h3{
+    color: #797979;
+    letter-spacing: 2px;
+    position: relative;
+    font-weight: 600 !important;
+    font-size: 14px;
+}
+
+#about div h3::after,
+#services h3::after{
+    content: "";
+    height: 4px !important;
+    width: 5rem !important;
+    background: #ed239f99;
+    filter: blur(4px) !important;
+    border: none;
+    position: absolute;
+    top: 0.3rem;
+    left: 6.32rem;
+    border-radius: 5px;
+    -webkit-filter: blur(4px);   
+}
+
+#about div h1,
+#services h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 2rem 0;
+}
+
+#about div p,
+#services p{
+    width: 30rem;
+    font-size: 0.9rem;
+    color: #797979;
+    line-height: 1.5rem;
+}
+
+#about div button{
+    padding: 0.9rem 2.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    background: var(--gradient-right);
+    border-radius: 0.3rem;
+    background-size: 200% auto;
+    color: #fff;
+    cursor: pointer;
+    transition: background-position 0.25s ease-in;
+    margin-top: 3rem;
+}
+
+#about div button:hover{
+    background-position: 100%;
+}
+
+#services{
+    margin: 0;
+    display: block !important;
+}
+
+#services h3::after{
+    left: 8rem;
+    top: 0.5rem;
+}
+#services .container{
+    height: fit-content;
+    min-height: 25rem !important;
+    width: 87vw !important;
+    text-align: center;
+}
+
+#services .service-box{
+    height: 25rem;
+    width: 20rem;
+    margin: auto;
+    background: var(--tertury);
+    display: inline-block;
+    margin: 2rem;
+}
+
+#services .service-box p{
+    width: 20rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: #fff;
+}
+
+.service-box img{
+    margin: 3rem auto;
+    width: fit-content;
+}
+.service-box h2, .service-box h4{
+    color: #fff;
+    text-shadow: 0 0 0.2rem #000;
 }
