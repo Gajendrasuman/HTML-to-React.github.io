@@ -220,29 +220,66 @@ header .ratings div h2{
     min-height: 25rem !important;
     width: 87vw !important;
     text-align: center;
+    margin: 5rem 0;
 }
 
 #services .service-box{
     height: 25rem;
     width: 20rem;
     margin: auto;
-    background: var(--tertury);
     display: inline-block;
     margin: 2rem;
+    transition: background 0.25s ease-in;
+}
+
+#services .service-box:hover{
+    background: var(--tertury);
 }
 
 #services .service-box p{
     width: 20rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     text-align: center;
-    color: #fff;
+    color: #797979;
 }
 
-.service-box img{
+#services .service-box img{
     margin: 3rem auto;
     width: fit-content;
 }
-.service-box h2, .service-box h4{
+#services .service-box h2,
+#services .service-box h4{
+    color: var(--primary);
+    text-shadow: none;
+    position: relative;
+}
+
+#services .service-box h2{
+    font-size: 1.3rem;
+}
+
+#services .service-box h4{
+    font-size: 14px;
+    margin: 2rem;
+    font-weight: 100;
+}
+#services .service-box:hover h2, 
+#services .service-box:hover h4,
+#services .service-box:hover p{
     color: #fff;
     text-shadow: 0 0 0.2rem #000;
+}
+
+#services .service-box h4::before{
+    content: "";
+    height: 2px;
+    width: 20%;
+    background: var(--gradient-right);
+    background-size: 200%;
+    position: absolute;
+    top: 120%;
+}
+
+#services .service-box:hover h4::before{
+    background: #fff;
 }
