@@ -150,7 +150,8 @@ header .ratings div h2{
 
 #about div h3,
 #services h3,
-#tesitmonial h3{
+#tesitmonial h3,
+#portfolio h3{
     color: #797979;
     letter-spacing: 2px;
     position: relative;
@@ -160,7 +161,8 @@ header .ratings div h2{
 
 #about div h3::after,
 #services h3::after,
-#tesitmonial h3::after{
+#tesitmonial h3::after,
+#portfolio h3::after{
     content: "";
     height: 4px !important;
     width: 5rem !important;
@@ -176,7 +178,8 @@ header .ratings div h2{
 
 #about div h1,
 #services h1,
-#tesitmonial h1{
+#tesitmonial h1,
+#portfolio h1{
     font-size: 2.6rem;
     font-weight: 900;
     color: var(--primary);
@@ -396,3 +399,31 @@ header .ratings div h2{
     color: gold;
     text-shadow: 0 0 2px var(--primary);
 }
+
+#portfolio{
+    margin-top: 15rem;
+}
+
+#portfolio h3::after{
+    left: 8.5rem;
+    top: 0.5rem;
+}
+
+#portfolio ul{
+    display: flex;
+    margin: 3rem 0;
+}
+
+#portfolio  ul li a{
+    margin: 0 1rem;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#portfolio ul li a:hover{
+    color: #00f;
+}
+.active-portfolio{
+    color: #00f;
+}
+
