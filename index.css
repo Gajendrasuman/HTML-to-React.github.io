@@ -149,7 +149,8 @@ header .ratings div h2{
 }
 
 #about div h3,
-#services h3{
+#services h3,
+#tesitmonial h3{
     color: #797979;
     letter-spacing: 2px;
     position: relative;
@@ -158,7 +159,8 @@ header .ratings div h2{
 }
 
 #about div h3::after,
-#services h3::after{
+#services h3::after,
+#tesitmonial h3::after{
     content: "";
     height: 4px !important;
     width: 5rem !important;
@@ -173,7 +175,8 @@ header .ratings div h2{
 }
 
 #about div h1,
-#services h1{
+#services h1,
+#tesitmonial h1{
     font-size: 2.6rem;
     font-weight: 900;
     color: var(--primary);
@@ -181,7 +184,8 @@ header .ratings div h2{
 }
 
 #about div p,
-#services p{
+#services p,
+#tesitmonial p{
     width: 30rem;
     font-size: 0.9rem;
     color: #797979;
@@ -282,4 +286,113 @@ header .ratings div h2{
 
 #services .service-box:hover h4::before{
     background: #fff;
+}
+
+#tesitmonial h3::after{
+    left: 10rem;
+    top: 0.5rem;
+}
+
+#tesitmonial .profile-image{
+    height: 15rem;
+    width: 15rem;
+    background: var(--gradient-top-right);
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0.2rem;
+    margin-left: 5rem;
+}
+
+#tesitmonial .profile-image img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+#tesitmonial .container,
+#tesitmonial .review{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+#tesitmonial .container{
+    margin-right: 5rem;
+    transition: left 0.25s ease-in;
+}
+#tesitmonial .review{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tesitmonial .container .review-box{
+    margin-left: 8rem;
+}
+
+#tesitmonial .container .review-box h2{
+    color: var(--primary);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+#tesitmonial .container .review-box h4{
+    color: #797979;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 1rem 0;
+}
+
+#tesitmonial .container .review-box p{
+    margin: 2rem 0;
+}
+
+#tesitmonial .review > div:last-child{
+    height: 2rem;
+    width: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    display: flex;
+}
+.dots{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px #000;
+    margin: auto;
+    cursor: pointer;
+    transition: background 0.25s ease-in;
+}
+
+.dots:hover{
+    background: #797979;
+}
+.active-slide{
+    left: -191%;
+    background: #fff;
+    transition: left 0.25s ease-in;
+}
+.active-slide-second{
+    left: -95.5%;
+    background: #fff;
+    transition: left 0.25s ease-in;
+}
+.active-slide-first{
+    left: 0;
+    background: #fff;
+    transition: left 0.25s ease-in;
+}
+
+.active-dot{
+    background: #797979;
+}
+
+.bxs-star{
+    color: var(--primary);
+}
+
+.star{
+    color: gold;
+    text-shadow: 0 0 2px var(--primary);
 }
