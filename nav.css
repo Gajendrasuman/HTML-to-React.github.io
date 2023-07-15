@@ -13,14 +13,16 @@ nav .title{
     margin-left: 8rem;
 }
 
-nav .title .logo{
+nav .title .logo,
+.title .logo{
     height: 2rem;
     width: 3rem;
     position: relative;
     top: -0.4rem;
 }
 
-nav .title h1{
+nav .title h1,
+.title h1{
     position: relative;
     top: -0.5rem;
     color: var(--primary);
